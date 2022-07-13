@@ -1,0 +1,49 @@
+
+@media (max-width: 991.8px) {
+  .nav__toggle {
+    display: block;
+    position: relative;
+    margin-top: 32px;
+    width: 30px;
+    height: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    z-index: 5;
+  }
+  .nav__toggle span, .nav__toggle::before, .nav__toggle::after {
+    content: "";
+    transition: all 0.3s ease 0s;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  .nav__toggle::before {
+    top: 0px;
+  }
+  .nav__toggle::after {
+    bottom: 0px;
+  }
+  .nav__toggle span {
+    top: calc(50% - 1px);
+  }
+  .menu-open .nav__toggle span {
+    transform: scale(0);
+  }
+  .menu-open .nav__toggle::before {
+    transform: rotate(45deg);
+    top: calc(50% - 1px);
+  }
+  .menu-open .nav__toggle::after {
+    transform: rotate(-45deg);
+    bottom: calc(50% - 1px);
+  }
+  .navbar.dark .nav__toggle span, .navbar.dark .nav__toggle::before, .navbar.dark .nav__toggle::after   {
+    background-color: #d5be8b;
+  }
+  .navbar.bg .nav__toggle span, .navbar.bg .nav__toggle::before, .navbar.bg .nav__toggle::after   {
+    background-color: #d5be8b;
+  }
+}

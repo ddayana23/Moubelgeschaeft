@@ -1,0 +1,44 @@
+.four-0-four-section{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/404-bg.png);
+    background-size: cover;
+    background-position: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.error{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sub-line{
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    text-transform: capitalize;
+}
+
+.sub-line a{
+    color: #fff;
+}
+
+
+@media (min-width:  576px) {
+    .error{
+        font-size: 70px;
+    }
+    .sub-line{
+        font-size: 25px;
+    }
+}
+@media (max-width:  575.8px) {
+    .error{
+        font-size: 50px;
+    }
+    .sub-line{
+        font-size: 20px;
+    }
+}
